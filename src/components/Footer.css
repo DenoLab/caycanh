@@ -1,0 +1,16 @@
+.footer-container {
+  background-color: #777;
+  padding: 20px;
+}
+
+.menu-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+display: flex;
+flex-direction: column;
+}
