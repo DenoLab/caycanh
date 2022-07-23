@@ -1,4 +1,5 @@
 import './App.css';
+import 'animate.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header, Footer, Navbar } from './components';
 import { Homepage, About, Products, Contact, Blog, Locations } from './pages';
@@ -7,6 +8,14 @@ import { useStateContext } from './ContextProvider'
 function App() {
   const { activeMobileLayout, setActiveMobileLayout, screenSize, setScreenSize, activeMobileNavbar, setActiveMobileNavbar } = useStateContext()
 
+  window.addEventListener('scroll', () => {
+    console.log(window.pageYOffset);
+    if (window.pageYOffset > 200) {
+      document.getElementById('header').classList.add('fixed');
+    } else {
+      document.getElementById('header').classList.remove('fixed');
+    }
+  })
 
   return (
     <div className="App">

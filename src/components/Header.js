@@ -26,7 +26,7 @@ function Header(props) {
   }, [screenSize])
 
   return (
-    <div className='CIAOckIsP'>
+    <div className='CIAOckIsP' id='header'>
       <div className='lLcisQaem'>
         {activeMobileLayout &&
           <div className='gDOEXLZdj'>
