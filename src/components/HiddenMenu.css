@@ -1,0 +1,38 @@
+.lsuPKLCYu {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnClose {
+  margin: 20px;
+}
+
+.NAFKifZMn {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  background-color: #86c200;
+  z-index: 9999;
+  padding-top: 30px;
+}
+.kKrGnMKZo{
+  margin: 0 13px 0 13px;
+  color:white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+.kKrGnMKZo:hover {
+  color: black;
+}
+.active {
+  color: black;
+}
+/* @media only screen and (max-width: 850px) {
+  .NAFKifZMn {
+    display: none;
+  }
+} */

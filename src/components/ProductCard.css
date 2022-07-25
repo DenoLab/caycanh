@@ -1,6 +1,6 @@
 .ymFOWGKnw .UeeNwqHRa {
-  width: 200px;
-  height: 200px;
+  width: 166px;
+  height: 166px;
 }
 .ymFOWGKnw{
   display: flex;
@@ -15,11 +15,12 @@
 }
 .wZkYuuuWW {
   margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .sbWfFsYHn{
   text-transform: uppercase;
-  padding: 10px;
+  padding: 7px 10px 7px 10px;
   background-color: #86c200;
   color: white;
   cursor: pointer;
@@ -36,4 +37,21 @@
 a{
   color: #111111;
   text-decoration: none;
+}
+.RDFBOYFrb{
+  font-size: 10.8px;
+  color: #353535;
+}
+.XVjcTbXgx{
+  font-size: 14.4px;
+  color: #353535;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 38px;
+}
+.zlXPxCrVY{
+  margin-top: 0;
 }

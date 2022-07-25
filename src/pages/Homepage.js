@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Banner, BlogCard, ProductCard, ImageCard } from '../components';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { bonsai, cayXuongRong, cayCanhTrongNha, cayCanhVanPhong, cayCanhSenDa, kinhNghiemMeoVat } from '../data/data'
@@ -11,12 +11,12 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-const Homepage = () => {
+const Homepage = ({ screenSize }) => {
+
   return (
     <div className='eUEaWUPKr'>
 
       <Banner />
-
 
       <div className='ylfDaVdmG'>
         <div className='igkVDMDEM'>
@@ -24,7 +24,7 @@ const Homepage = () => {
         </div>
         <div className='NdlrugOIj'>
           <Swiper
-            slidesPerView={6}
+            slidesPerView={screenSize > 850 ? 6 : (screenSize > 550 ? 3 : 2)}
             spaceBetween={30}
             slidesPerGroup={5}
             loop={true}
@@ -37,7 +37,7 @@ const Homepage = () => {
             className="mySwiper"
           >
             {bonsai.map((bonsai) => (
-              <SwiperSlide className='FQKmnklDq'>
+              <SwiperSlide className='NkOvDkASi'>
                 <ImageCard category="Bonsai" image={bonsai.imageUrl} />
               </SwiperSlide>
             ))}
@@ -51,8 +51,8 @@ const Homepage = () => {
         </div>
         <div className='NdlrugOIj'>
           <Swiper
-            slidesPerView={5}
-            spaceBetween={30}
+            slidesPerView={screenSize > 850 ? 5 : (screenSize > 550 ? 3 : 2)}
+            spaceBetween={0}
             slidesPerGroup={5}
             loop={true}
             loopFillGroupWithBlank={true}
@@ -78,8 +78,8 @@ const Homepage = () => {
         </div>
         <div className='NdlrugOIj'>
           <Swiper
-            slidesPerView={5}
-            spaceBetween={30}
+            slidesPerView={screenSize > 850 ? 5 : (screenSize > 550 ? 3 : 2)}
+            spaceBetween={0}
             slidesPerGroup={5}
             loop={true}
             loopFillGroupWithBlank={true}
@@ -105,8 +105,8 @@ const Homepage = () => {
         </div>
         <div className='NdlrugOIj'>
           <Swiper
-            slidesPerView={5}
-            spaceBetween={30}
+            slidesPerView={screenSize > 850 ? 5 : (screenSize > 550 ? 3 : 2)}
+            spaceBetween={0}
             slidesPerGroup={5}
             loop={true}
             loopFillGroupWithBlank={true}
@@ -133,8 +133,8 @@ const Homepage = () => {
         </div>
         <div className='NdlrugOIj'>
           <Swiper
-            slidesPerView={5}
-            spaceBetween={30}
+            slidesPerView={screenSize > 850 ? 5 : (screenSize > 550 ? 3 : 2)}
+            spaceBetween={0}
             slidesPerGroup={5}
             loop={true}
             loopFillGroupWithBlank={true}
@@ -161,8 +161,8 @@ const Homepage = () => {
         </div>
         <div className='NdlrugOIj'>
           <Swiper
-            slidesPerView={5}
-            spaceBetween={30}
+            slidesPerView={screenSize > 850 ? 5 : (screenSize > 550 ? 3 : 2)}
+            spaceBetween={0}
             slidesPerGroup={5}
             loop={true}
             loopFillGroupWithBlank={true}
@@ -183,14 +183,14 @@ const Homepage = () => {
       </div>
 
 
-      <div className='ylfDaVdmG'>
+      <div className='hRvANLjHi'>
         <div className='igkVDMDEM'>
           <a className='UmgIhHzCT' href='/' >Kinh nghiệm - Mẹo vặt</a>
         </div>
         <div className='NdlrugOIj'>
           <Swiper
-            slidesPerView={4}
-            spaceBetween={30}
+            slidesPerView={screenSize > 850 ? 4 : (screenSize > 550 ? 3 : 2)}
+            spaceBetween={20}
             slidesPerGroup={4}
             loop={true}
             loopFillGroupWithBlank={true}
@@ -203,7 +203,7 @@ const Homepage = () => {
           >
             {kinhNghiemMeoVat.map((kinhNghiemMeoVat) => (
               <SwiperSlide className='FQKmnklDq'>
-                <BlogCard category="Kinh nghiệm - Mẹo vặt" title={kinhNghiemMeoVat.title} date={kinhNghiemMeoVat.date} imageUrl={kinhNghiemMeoVat.imageUrl} content={kinhNghiemMeoVat.content} url={kinhNghiemMeoVat.url} />
+                <BlogCard className='xvkqiaKbF' category="Kinh nghiệm - Mẹo vặt" title={kinhNghiemMeoVat.title} date={kinhNghiemMeoVat.date} imageUrl={kinhNghiemMeoVat.imageUrl} content={kinhNghiemMeoVat.content} url={kinhNghiemMeoVat.url} />
               </SwiperSlide>
             ))}
           </Swiper>

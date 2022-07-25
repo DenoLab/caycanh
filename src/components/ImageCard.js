@@ -5,9 +5,7 @@ const ImageCard = ({ category, title, price, image }) => {
   return (
     <div className='sdnLHpaJE'>
       <div className='WeZfAoALd'>
-        <a href='/' className='ymFOWGKnw'>
-          <img className='UeeNwqHRa' src={image} alt='' />
-        </a>
+        <img className='XlnkbAwCC' src={image} alt='' />
       </div>
 
     </div>

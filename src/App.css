@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -34,5 +35,26 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.TPojohRJJ{
+  position: absolute;
+  top: 0;
+  height: 145px;
+}
+.show{
+  position: relative;
+}
+
+@media only screen and (max-width: 850px) {
+  .XlnkbAwCC{
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .NAFKifZMn{
+    display: none;
   }
 }

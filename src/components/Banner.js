@@ -20,16 +20,17 @@ function Banner(props) {
         <input type='radio' name='radio-btn' id='radio4' />
 
         <div className='slide first'>
-          <img className='slide first' src='http://mauweb.monamedia.net/caycanh/wp-content/uploads/2018/03/project-banner.jpg' alt='' />
+          <img className='HUpxrpDMs' src='http://mauweb.monamedia.net/caycanh/wp-content/uploads/2018/03/project-banner.jpg' alt='' />
+          {/* <div className='ugxySSEXs'></div> */}
         </div>
         <div className='slide'>
-          <img className='slide' src='http://mauweb.monamedia.net/caycanh/wp-content/uploads/2018/03/cleancut-installationHD.jpg' alt='' />
+          <img className='HUpxrpDMs' src='http://mauweb.monamedia.net/caycanh/wp-content/uploads/2018/03/cleancut-installationHD.jpg' alt='' />
         </div>
         <div className='slide'>
-          <img className='slide' src='http://mauweb.monamedia.net/caycanh/wp-content/uploads/2018/03/project-banner.jpg' alt='' />
+          <img className='HUpxrpDMs' src='http://mauweb.monamedia.net/caycanh/wp-content/uploads/2018/03/project-banner.jpg' alt='' />
         </div>
         <div className='slide'>
-          <img className='slide' src='http://mauweb.monamedia.net/caycanh/wp-content/uploads/2018/03/cleancut-installationHD.jpg' alt='' />
+          <img className='HUpxrpDMs' src='http://mauweb.monamedia.net/caycanh/wp-content/uploads/2018/03/cleancut-installationHD.jpg' alt='' />
         </div>
 
         <div className='navigation-auto'>

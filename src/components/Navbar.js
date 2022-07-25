@@ -1,37 +1,34 @@
 import React from 'react'
 import './Navbar.css'
 import { Link, NavLink } from 'react-router-dom'
-import { useStateContext } from '../ContextProvider'
 
 const Navbar = () => {
-  const { activeMobileNavbar, setActiveMobileNavbar } = useStateContext()
-
   return (
     <>
-      {activeMobileNavbar && <div className='WwUkHefbb'>
-        <div className='lsuPKLCYu'>
-          <NavLink className="nav-link" activeClassName="active" exact to="/" onClick={() => setActiveMobileNavbar((prevActiveMenu) => !prevActiveMenu)}>Trang chủ</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/about" onClick={() => setActiveMobileNavbar((prevActiveMenu) => !prevActiveMenu)}>Giới thiệu</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/products" onClick={() => setActiveMobileNavbar((prevActiveMenu) => !prevActiveMenu)}>Sản phẩm</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/blog" onClick={() => setActiveMobileNavbar((prevActiveMenu) => !prevActiveMenu)}>Kinh nghiệm hay</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/contact" onClick={() => setActiveMobileNavbar((prevActiveMenu) => !prevActiveMenu)}>Liên hệ</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/locations" onClick={() => setActiveMobileNavbar((prevActiveMenu) => !prevActiveMenu)}>Hệ thống siêu thị</NavLink>
-        </div>
-        <div className='btnClose'>
-          <button onClick={() => setActiveMobileNavbar((prevActiveMenu) => !prevActiveMenu)}>Đóng</button>
-        </div>
-      </div>}
 
-      {!activeMobileNavbar && <div className='mCCRHhUCW'>
-        <div className='tYFSQzCXe'>
-          <NavLink className="nav-link" activeClassName="active" exact to="/">Trang chủ</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/about">Giới thiệu</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/products">Sản phẩm</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/blog">Kinh nghiệm hay</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/contact">Liên hệ</NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact to="/locations">Hệ thống siêu thị</NavLink>
-        </div>
-      </div>}
+      {/* {activeMenu &&
+        <div className='NAFKifZMn'>
+          <div className='lsuPKLCYu'>
+            <NavLink className="nav-link" activeClassName="active" exact to="/" onClick={() => { setActiveMenu(false) }}>Trang chủ</NavLink>
+            <NavLink className="nav-link" activeClassName="active" exact to="/about" onClick={() => { setActiveMenu(false) }}>Giới thiệu</NavLink>
+            <NavLink className="nav-link" activeClassName="active" exact to="/products" onClick={() => { setActiveMenu(false) }}>Sản phẩm</NavLink>
+            <NavLink className="nav-link" activeClassName="active" exact to="/blog" onClick={() => { setActiveMenu(false) }}>Kinh nghiệm hay</NavLink>
+            <NavLink className="nav-link" activeClassName="active" exact to="/contact" onClick={() => { setActiveMenu(false) }}>Liên hệ</NavLink>
+            <NavLink className="nav-link" activeClassName="active" exact to="/locations" onClick={() => { setActiveMenu(false) }}>Hệ thống siêu thị</NavLink>
+          </div>
+          <div className='btnClose'>
+            <button onClick={() => { setActiveMenu(false) }}>Đóng</button>
+          </div>
+        </div>} */}
+
+      <div className='tYFSQzCXe'>
+        <NavLink className="pQnCIyNkY" activeClassName="active" exact to="/">Trang chủ</NavLink><p className='divider-navbar'></p>
+        <NavLink className="pQnCIyNkY" activeClassName="active" exact to="/about">Giới thiệu</NavLink><p className='divider-navbar'></p>
+        <NavLink className="pQnCIyNkY" activeClassName="active" exact to="/products">Sản phẩm</NavLink><p className='divider-navbar'></p>
+        <NavLink className="pQnCIyNkY" activeClassName="active" exact to="/blog">Kinh nghiệm hay</NavLink><p className='divider-navbar'></p>
+        <NavLink className="pQnCIyNkY" activeClassName="active" exact to="/contact">Liên hệ</NavLink><p className='divider-navbar'></p>
+        <NavLink className="pQnCIyNkY" activeClassName="active" exact to="/locations">Hệ thống siêu thị</NavLink>
+      </div>
     </>
   )
 }
