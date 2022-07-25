@@ -12,12 +12,12 @@ const HiddenMenu = ({ activeMenu, setActiveMenu }) => {
         <NavLink className="kKrGnMKZo" activeClassName="active" exact to="/blog" onClick={() => { setActiveMenu(false) }}>Kinh nghiệm hay</NavLink>
         <NavLink className="kKrGnMKZo" activeClassName="active" exact to="/contact" onClick={() => { setActiveMenu(false) }}>Liên hệ</NavLink>
         <NavLink className="kKrGnMKZo" activeClassName="active" exact to="/locations" onClick={() => { setActiveMenu(false) }}>Hệ thống siêu thị</NavLink>
-      </div>
-      <div className='btnClose'>
-        <button onClick={() => {
-          console.log(activeMenu)
-          setActiveMenu(false)
-        }}>Đóng</button>
+        <div className='btnClose'>
+          <button onClick={() => {
+            console.log(activeMenu)
+            setActiveMenu(false)
+          }}>Đóng</button>
+        </div>
       </div>
     </div>
   )

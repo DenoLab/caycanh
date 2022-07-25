@@ -1,10 +1,15 @@
 .lsuPKLCYu {
   display: flex;
   flex-direction: column;
+  background-color: rgba(255,255,255,0.95);
+  width: 260px;
+  height: 100%;
+  padding-top: 100px;
+  align-items: flex-start;
 }
 
 .btnClose {
-  margin: 20px;
+  margin: 50px auto;
 }
 
 .NAFKifZMn {
@@ -13,21 +18,24 @@
   width: 100vw;
   height: 100vh;
   justify-content: center;
-  background-color: #86c200;
+  background-color: rgba(11, 11, 11, 0.664);
   z-index: 9999;
-  padding-top: 30px;
 }
 .kKrGnMKZo{
-  margin: 0 13px 0 13px;
-  color:white;
-  font-size: 16px;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  color: rgba(102,102,102,0.85);
+  font-size: 12.8px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
+  border-top: 1px solid #ececec;
 }
 .kKrGnMKZo:hover {
-  color: black;
+  color: rgb(31, 31, 31);
+  background-color:  #e2e2e2;
 }
+
 .active {
   color: black;
 }
